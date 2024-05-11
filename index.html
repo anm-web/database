@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locked</title>
+    <link rel="icon" href="logo.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+      ::-webkit-scrollbar {
+        width: 1px;
+        height: 1px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: ghostwhite;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+
+      body {
+        background-color: #1c2333;
+        color: ghostwhite;
+        font-family: "Sora", sans-serif;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+
+      form {
+        display: block;
+        justify-content: center;
+        align-items: center;
+      }
+
+      input {
+        font-size: 20px;
+        padding: 10px;
+        outline: none;
+        color: ghostwhite;
+        background-color: #1d2944;
+        border-radius: 10px;
+        border: 1px solid #0f1116;
+        transition: all 0.5s;
+      }
+
+      input:focus {
+        border: 1px solid ghostwhite;
+      }
+
+      button {
+        font-size: 20px;
+        padding: 10px 80px;
+        color: ghostwhite;
+        background-color: #1d2944;
+        border: 1px solid ghostwhite;
+        border-radius: 10px;
+        transition: all 0.5s;
+      }
+
+      button:hover {
+        background-color: #11141b;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>AnM Database</h1>
+      <br />
+      <h2>Enter Password</h2>
+      <br /><br /><br /><br />
+      <form id="Form">
+        <input
+          placeholder="Password"
+          type="password"
+          id="pass"
+          required
+        /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <button type="submit">Enter</button>
+      </form>
+      <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
